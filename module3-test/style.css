@@ -1,0 +1,13 @@
+.fixed-top {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .container {
+    padding-top: 70px; /* Adjust based on navbar height */
+  }
+  
+  .dropdown-menu-full {
+    width: 100vw; /* Set dropdown menu width to full viewport width */
+  }
