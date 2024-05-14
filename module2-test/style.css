@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.container {
+    padding: 20px;
+}
+.section {
+    position: relative;
+    float: left;
+    width: calc(33.33% - 2px); /* Adjust width to account for border */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid black; /* Add 1px thick border */
+    margin-right: 2px; /* Adjust margin for equal spacing */
+    margin-bottom: 20px;
+}
+.section-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #3498db;
+    padding: 5px 10px;
+    color: white;
+    font-weight: bold;
+}
+@media (max-width: 991px) {
+    .section {
+        width: calc(50% - 2px); /* Adjust width for tablet view */
+        margin-right: 2px; /* Adjust margin for equal spacing */
+    }
+    .section:nth-child(3) {
+        clear: both;
+        width: calc(100% - 2px); /* Adjust width for third section in tablet view */
+        margin-right: 0;
+    }
+}
+@media (max-width: 767px) {
+    .section {
+        width: calc(100% - 2px); /* Adjust width for mobile view */
+        margin-right: 2px; /* Adjust margin for equal spacing */
+    }
+}
+
+/* Optional: Set font size */
+body {
+    font-size: 16px; /* Default font size */
+}
+
+h1 {
+    font-size: 24px; /* Set font size to be bigger */
+    color: #3498db; /* Set font color to the same blue as the boxes */
+    text-align: center; /* Center the text horizontally */
+}
+
+.section-title {
+    font-size: 125%; /* 25% larger */
+}
